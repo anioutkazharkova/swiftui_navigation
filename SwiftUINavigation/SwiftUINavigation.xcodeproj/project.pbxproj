@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		1DA5C8A2253B36D7000C2FB8 /* MyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA5C8A1253B36D7000C2FB8 /* MyApp.swift */; };
+		1DA5C8BC253B3A46000C2FB8 /* ModuleConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA5C8B9253B3A46000C2FB8 /* ModuleConfig.swift */; };
+		1DA5C8BD253B3A46000C2FB8 /* IScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA5C8BA253B3A46000C2FB8 /* IScreenView.swift */; };
+		1DA5C8BE253B3A46000C2FB8 /* Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA5C8BB253B3A46000C2FB8 /* Navigator.swift */; };
 		1DD1AC5D25053A850013CA37 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD1AC5C25053A850013CA37 /* AppDelegate.swift */; };
 		1DD1AC5F25053A850013CA37 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD1AC5E25053A850013CA37 /* SceneDelegate.swift */; };
 		1DD1AC6125053A850013CA37 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD1AC6025053A850013CA37 /* ContentView.swift */; };
@@ -31,6 +34,9 @@
 
 /* Begin PBXFileReference section */
 		1DA5C8A1253B36D7000C2FB8 /* MyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyApp.swift; sourceTree = "<group>"; };
+		1DA5C8B9253B3A46000C2FB8 /* ModuleConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModuleConfig.swift; sourceTree = "<group>"; };
+		1DA5C8BA253B3A46000C2FB8 /* IScreenView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IScreenView.swift; sourceTree = "<group>"; };
+		1DA5C8BB253B3A46000C2FB8 /* Navigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Navigator.swift; sourceTree = "<group>"; };
 		1DD1AC5925053A850013CA37 /* SwiftUINavigation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUINavigation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DD1AC5C25053A850013CA37 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1DD1AC5E25053A850013CA37 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -99,6 +105,24 @@
 			path = navigation;
 			sourceTree = "<group>";
 		};
+		1DA5C8B7253B3A46000C2FB8 /* navigator */ = {
+			isa = PBXGroup;
+			children = (
+				1DA5C8B8253B3A46000C2FB8 /* config */,
+				1DA5C8BA253B3A46000C2FB8 /* IScreenView.swift */,
+				1DA5C8BB253B3A46000C2FB8 /* Navigator.swift */,
+			);
+			path = navigator;
+			sourceTree = "<group>";
+		};
+		1DA5C8B8253B3A46000C2FB8 /* config */ = {
+			isa = PBXGroup;
+			children = (
+				1DA5C8B9253B3A46000C2FB8 /* ModuleConfig.swift */,
+			);
+			path = config;
+			sourceTree = "<group>";
+		};
 		1DD1AC5025053A850013CA37 = {
 			isa = PBXGroup;
 			children = (
@@ -118,6 +142,7 @@
 		1DD1AC5B25053A850013CA37 /* SwiftUINavigation */ = {
 			isa = PBXGroup;
 			children = (
+				1DA5C8B7253B3A46000C2FB8 /* navigator */,
 				1DA5C8A8253B3840000C2FB8 /* navigation */,
 				1DA5C8A6253B37DE000C2FB8 /* container */,
 				1DA5C8A5253B37A6000C2FB8 /* old */,
@@ -221,6 +246,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1DF6C99525053DC800AA3F99 /* NavigationStack.swift in Sources */,
+				1DA5C8BE253B3A46000C2FB8 /* Navigator.swift in Sources */,
 				1DD1AC7A25053CBC0013CA37 /* IModelView.swift in Sources */,
 				1DD1AC7425053C580013CA37 /* ContainerView.swift in Sources */,
 				1DD1AC80250545900013CA37 /* Screen.swift in Sources */,
@@ -230,11 +256,13 @@
 				1DD1AC7625053C7A0013CA37 /* ContainerModel.swift in Sources */,
 				1DD1AC5D25053A850013CA37 /* AppDelegate.swift in Sources */,
 				1DD1AC5F25053A850013CA37 /* SceneDelegate.swift in Sources */,
+				1DA5C8BD253B3A46000C2FB8 /* IScreenView.swift in Sources */,
 				1DD1AC7825053C9E0013CA37 /* IModel.swift in Sources */,
 				1DF6C9972505538A00AA3F99 /* NavigationItemContainer.swift in Sources */,
 				1DD1AC7C25053CD70013CA37 /* LazyView.swift in Sources */,
 				1DF6C99325053D4600AA3F99 /* LoaderView.swift in Sources */,
 				1DD1AC6125053A850013CA37 /* ContentView.swift in Sources */,
+				1DA5C8BC253B3A46000C2FB8 /* ModuleConfig.swift in Sources */,
 				1DD1AC7225053B3F0013CA37 /* View+Any.swift in Sources */,
 				1DD1AC82250546A10013CA37 /* NavigationViewModel.swift in Sources */,
 			);
